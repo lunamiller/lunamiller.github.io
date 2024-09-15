@@ -8,21 +8,22 @@ body > div > header {
     justify-content: space-between;
     align-items: baseline;
     background-color: violet;
-    height: 20vh;
-    background-image: url(https://placebear.com/1125/240);
+    height: 70vh;
+    background-image: url(https://live.staticflickr.com/3955/15497858186_215ca45bbf_b.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
     grid-area: header;
 }
 
 .flex-container {
+    align-self: flex-start;
     display: flex;
     white-space: nowrap;
 }
 
 #logo {
-    margin: 15px;
+    margin: 20px;
     padding: 8px;
     font-family: "Maitree", sans-serif;
     width: 16%;
@@ -33,6 +34,8 @@ body > div > header {
     display: flex;
     list-style: none;
     text-decoration: none;
+    margin-top: 20px;
+
 }
 
 #nav-ul > li {
@@ -47,7 +50,7 @@ body > div > header {
     border-radius: 10%;
 }
 
-.navbutton1 {
+.navbuttonone {
     color: white;
     text-decoration: none;
     padding: 12px;
@@ -59,18 +62,26 @@ body > div > header {
 #icons {
     display: flex;
     text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
     
     grid-area: icons;
 }
 
+.Read {
+    text-decoration: none;
+    color: grey;
+}
+
 article {
-    padding: 4vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    padding-top: 5.5vh;
+    padding-bottom: 5.5vh;
 }
 
 #photo {
-    background-image: url(https://placebear.com/200/200);
+    background-image: url(https://live.staticflickr.com/65535/52580455465_6c92394fb6_b.jpg);
     background-size: cover;
     background-position: center;
     
@@ -78,14 +89,23 @@ article {
 }
 
 #story {
-    padding-left: 7vh;
-    padding-right: 7vh;
-    padding-bottom: 5vh;
-    padding-top: 3vh;
+    padding-left: 9vh;
+    padding-right: 9%;
+    padding-bottom: 7vh;
+    padding-top: 5vh;
     background-color: #efeff1;
     background-size: cover;
 
     grid-area: story;
+}
+
+.Read-story {
+    text-decoration: none;
+    color: grey;
+}
+
+#story > nav > ul {
+    text-decoration: none;
 }
 
 #gallery {
@@ -96,6 +116,17 @@ article {
     padding-right: 13vh;
 
     grid-area: gallery;
+}
+
+#gallery > h1 {
+    padding-bottom: 3vh;
+}
+
+.small-photo{
+    width: 250px;
+    height: 150px;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 #row-one {
@@ -112,10 +143,10 @@ article {
 }
 
 body > div > footer {
-    background-image: url(https://placebear.com/1000/200);
+    background-image: url(https://live.staticflickr.com/5508/12219367194_9d55a9620b_c.jpg);
     background-size: cover;
     background-position: center;
-    padding: 10vh;
+    padding: 4vh;
 
     grid-area: footer;
 }
