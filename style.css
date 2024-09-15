@@ -1,37 +1,38 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+}
+
+body > div > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: violet;
+    height: 20vh;
+    background-image: url(https://placebear.com/1125/240);
+    background-size: cover;
+    background-position: center;
+
+    grid-area: header;
+}
+
+.flex-container {
+    display: flex;
+    white-space: nowrap;
 }
 
 #logo {
-    margin: 0px;
+    margin: 15px;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    box-shadow: 8px 8px 10px 3px darkorange;
+    font-family: "Maitree", sans-serif;
     width: 16%;
-    text-shadow: 
-    1px 1px 0px black, /* Bottom-right shadow */
-    -1px 1px 0px black, /* Bottom-left shadow */
-    1px -1px 0px black, /* Top-right shadow */
-    -1px -1px 0px black; /* Top-left shadow */
-}
-
-ul { 
-    margin: 0px;
-}
-
-body > header {
-    background-color: orange;
     color: white;
-    color: #FDD692;
-    display: flex;
-    height: 10vh;
-    align-items: center;
-    justify-content: space-around;
 }
 
 #nav-ul {
     display: flex;
+    list-style: none;
+    text-decoration: none;
 }
 
 #nav-ul > li {
@@ -39,67 +40,104 @@ body > header {
     margin: 16px;
 }
 
-body > header > nav > ul {
-    list-style: none;
+.navbutton {
+    color: white;
     text-decoration: none;
+    padding: 12px;
+    border-radius: 10%;
 }
 
-.navbutton {
+.navbutton1 {
     color: white;
     text-decoration: none;
     padding: 12px;
     border: 1px, solid, white;
     border-radius: 10%;
+    padding: 5px;
 }
 
-body > main article {
-    width: 85%;
-    margin: auto;
-    font-size: 1.5vw;
-
-}
-
-#main-content {
+#icons {
     display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div {
-    width: 70%;
-}
-
-p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-form {
     text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    
+    grid-area: icons;
 }
 
-h2 {
+.fas {
+    color: brown;
+    font-size: 24px;
+}
+
+article {
+    padding: 4vh;
+}
+
+#photo {
+    background-image: url(https://placebear.com/200/200);
+    background-size: cover;
+    background-position: center;
+    
+    grid-area: photo;
+}
+
+#story {
+    padding-left: 7vh;
+    padding-right: 7vh;
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+    background-color: #efeff1;
+    background-size: cover;
+
+    grid-area: story;
+}
+
+#gallery {
     text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    padding-left: 13vh;
+    padding-right: 13vh;
+
+    grid-area: gallery;
 }
 
-body > footer {
-    background-color: orange;
+#row-one {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3vh;
 }
 
-img {
-    border-radius: 100%;
-}
-
-#footer-ul {
+#row-two {
     display: flex;
-    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+body > div > footer {
+    background-image: url(https://placebear.com/1000/200);
+    background-size: cover;
+    background-position: center;
+    padding: 10vh;
+
+    grid-area: footer;
 }
 
-#footer-ul > div > li > a {
-    color: white;
-    text-decoration: none;
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "icons icons"
+    "photo story"
+    "gallery gallery"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+}
+
+#grid-container-two {
+    display: grid;
+    grid-template-areas: 
+    '';
 }
