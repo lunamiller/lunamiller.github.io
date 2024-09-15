@@ -99,13 +99,17 @@ article {
     grid-area: story;
 }
 
-.Read-story {
+.Readstory {
     text-decoration: none;
+    list-style: none;
     color: grey;
 }
 
-#story > nav > ul {
+#story>nav>ul {
+    padding: 0px;
     text-decoration: none;
+    list-style: none;
+    text-align: left;
 }
 
 #gallery {
